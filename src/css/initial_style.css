@@ -1,0 +1,113 @@
+.carousel-style {
+  margin-right: 5rem; /* Estilo por defecto */
+}
+
+.carousel-image {
+  height: 350px; /* O la altura que desees */
+  object-fit: cover; /* Asegura que la imagen se ajuste bien dentro del contenedor */
+}
+
+.padding-row {
+  padding: 8rem;
+}
+
+.custom-button {
+  color: #025201;
+  border: 2px solid #025201;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.custom-button:hover {
+  background-color: #025201;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.row-events-init {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px;
+}
+
+.card-init {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  margin: 15px;
+  width: 25rem;
+  transition: transform 0.3s ease;
+  margin: 20px;
+}
+
+.card-init:hover {
+  transform: translateY(-20px) scale(1.03);
+}
+
+.img-init-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; /* Espacio entre imágenes */
+  padding: 20px; /* Espacio alrededor del contenedor */
+}
+
+.img-init {
+  width: 200px; /* Ancho fijo para todas las imágenes */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-width: 100%; /* Asegura que las imágenes no se desborden */
+  filter: grayscale();
+  transition: filter 0.3s ease-in-out;
+}
+
+.img-init:hover {
+  filter: none;
+  cursor: pointer;
+}
+
+.col-init {
+  display: flex;
+  justify-content: center;
+}
+/* Media query para pantallas medianas */
+@media (max-width: 992px) {
+  .carousel-style {
+    margin-right: 0;
+  }
+  .padding-row {
+    padding: 4rem; /* Anula el relleno en pantallas medianas */
+  }
+  .card-init {
+    margin: 10px;
+    width: 17rem;
+  }
+  .row-events-init {
+    padding: 20px;
+  }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-style {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .padding-row {
+    padding: 2rem; /* Anula el relleno en pantallas pequeñas */
+  }
+  .card-init {
+    margin: 15px 0;
+    width: 19rem;
+  }
+  .row-events-init {
+    padding: 0;
+  }
+  .carousel-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+    .carousel-image {
+      height: 200px;
+    }
+  }

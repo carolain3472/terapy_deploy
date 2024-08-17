@@ -1,0 +1,16 @@
+.gradient-bg-about {
+  background: linear-gradient(to right, #065530, #73f8ba);
+}
+
+.custom-button2 {
+  background-color: #025201;
+  color: #ffffff;
+  border: 2px solid #025201;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.custom-button2:hover {
+  background-color: #ffffff;
+  border: 2px solid #025201;
+  color: #025201;
+}
